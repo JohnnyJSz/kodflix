@@ -1,22 +1,25 @@
 import React from 'react';
-// import jslogo from './jslogo.png';
+import blackMirrorCover from './images/blackMirrorCover.jpg';
+import breakingBadCover from './images/breakingBadCover.jpg';
+import deathNoteCover from './images/deathNoteCover.jpg';
+import gameOfThronesCover from './images/gameOfThronesCover.jpg';
+import theWalkingDeadCover from './images/theWalkingDeadCover.jpg';
+import ironManCover from './images/ironManCover.jpg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      {/* <img src={jslogo} alt='JavaScript logo'/>
-      <br /><br /><br /> */}
       <div className='container'>
         <div className='row1'>
-          <div className='titles'><h2>Black Mirror</h2></div>
-          <div className='titles'><h2>Breaking Bad</h2></div>
-          <div className='titles'><h2>Death Note</h2></div>
+          <div className='titles'><img src={blackMirrorCover} alt='Black Mirror' /></div>
+          <div className='titles'><img src={breakingBadCover} alt='Breaking Bad' /></div>
+          <div className='titles'><img src={deathNoteCover} alt='Death Note' /></div>
         </div>
         <div className='row2'>
-          <div className='titles'><h2>Game of Thrones</h2></div>
-          <div className='titles'><h2>The Walking Dead</h2></div>
-          <div className='titles'><h2>The Wire</h2></div>
+          <div className='titles'><img src={gameOfThronesCover} alt='Game Of Thrones' /></div>
+          <div className='titles'><img src={theWalkingDeadCover} alt='The Walking Dead' /></div>
+          <div className='titles'><img src={ironManCover} alt='Iron Man 2' /></div>
         </div>
       </div>
     </div>
