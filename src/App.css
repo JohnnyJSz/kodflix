@@ -17,18 +17,20 @@
   flex: 1;
   border: 1px solid greenyellow;
   position: relative;
+  /*overflow: hidden;*/
 }
 .overlayTitle {
   color: whitesmoke;
   background-color: black;
-  opacity: .8;
   width: 100%;
-  display: none;
+  opacity: .4;
   position: absolute;
-  bottom: 40%;
+  bottom: 10%;
+  transition: bottom ease 1s;
 }
 .titles:hover .overlayTitle{
-  display: block;
+  opacity: .8;
+  bottom: 40%;
 }
 
 @media only screen and (max-width: 600px) {
