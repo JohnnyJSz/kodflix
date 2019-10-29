@@ -12,7 +12,12 @@ function App() {
     <div className="App">
       <div className='container'>
         <div className='row1'>
-          <div className='titles'><img src={blackMirrorCover} alt='Black Mirror' /></div>
+          <div className='titles'>
+            <img src={blackMirrorCover} alt='Black Mirror' />
+            <div className='overlayTitle'>
+              <h3>Black Mirror</h3>
+            </div>
+          </div>
           <div className='titles'><img src={breakingBadCover} alt='Breaking Bad' /></div>
           <div className='titles'><img src={deathNoteCover} alt='Death Note' /></div>
         </div>

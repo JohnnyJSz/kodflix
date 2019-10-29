@@ -4,7 +4,6 @@
 
 .container {
   text-align: center;
-  margin: 30px;
 }
 
 .row1 {
@@ -16,4 +15,21 @@
 
 .titles {
   flex: 1;
+  padding: 20px;
+  border: 1px solid greenyellow;
+}
+.overlayTitle {
+  display: none;
+}
+.titles:hover .overlayTitle{
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .row1 {
+    flex-direction: column;
+  }
+  .row2 {
+    flex-direction: column;
+  }
 }
