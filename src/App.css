@@ -15,11 +15,17 @@
 
 .titles {
   flex: 1;
-  padding: 20px;
   border: 1px solid greenyellow;
+  position: relative;
 }
 .overlayTitle {
+  color: whitesmoke;
+  background-color: black;
+  opacity: .8;
+  width: 100%;
   display: none;
+  position: absolute;
+  bottom: 40%;
 }
 .titles:hover .overlayTitle{
   display: block;
