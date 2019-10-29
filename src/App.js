@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+// import jslogo from './jslogo.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <h1>Welcome to KODFLIX!</h1>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <img src={jslogo} alt='JavaScript logo'/>
+      <br /><br /><br /> */}
+      <div className='container'>
+        <div className='row1'>
+          <div className='titles'><h2>Black Mirror</h2></div>
+          <div className='titles'><h2>Breaking Bad</h2></div>
+          <div className='titles'><h2>Death Note</h2></div>
+        </div>
+        <div className='row2'>
+          <div className='titles'><h2>Game of Thrones</h2></div>
+          <div className='titles'><h2>The Walking Dead</h2></div>
+          <div className='titles'><h2>The Wire</h2></div>
+        </div>
+      </div>
     </div>
   );
 }
