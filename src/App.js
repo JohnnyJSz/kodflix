@@ -4,7 +4,9 @@ import breakingBadCover from './images/breakingBadCover.jpg';
 import deathNoteCover from './images/deathNoteCover.jpg';
 import gameOfThronesCover from './images/gameOfThronesCover.jpg';
 import theWalkingDeadCover from './images/theWalkingDeadCover.jpg';
-import ironManCover from './images/ironManCover.jpg';
+import ironMan2Cover from './images/ironMan2Cover.jpg';
+import Movie from './Movies';
+
 import './App.css';
 
 function App() {
@@ -12,48 +14,28 @@ function App() {
     <div className="App">
       <div className='container'>
         <div className='row1'>
-          <div className='titles'>
-            <img src={blackMirrorCover} alt='Black Mirror' />
-            <div className='overlayTitle'>
-              <h1>Black Mirror</h1>
-            </div>
-          </div>
-          <div className='titles'>
-            <img src={breakingBadCover} alt='Breaking Bad' />
-            <div className='overlayTitle'>
-              <h1>Breaking Bad</h1>
-            </div>
-          </div>
-          <div className='titles'>
-            <img src={deathNoteCover} alt='Death Note' />
-            <div className='overlayTitle'>
-              <h1>Death Note</h1>
-            </div>
-          </div>
+          <Movie name='Black Mirror' cover={blackMirrorCover}/>
+          <Movie name='Breaking Bad' cover={breakingBadCover}/>
+          <Movie name='Death Note' cover={deathNoteCover}/>
         </div>
         <div className='row2'>
-          <div className='titles'>
-            <img src={gameOfThronesCover} alt='Game Of Thrones' />
-            <div className='overlayTitle'>
-              <h1>Game Of Thrones</h1>
-            </div>
-          </div>
-          <div className='titles'>
-            <img src={theWalkingDeadCover} alt='The Walking Dead' />
-            <div className='overlayTitle'>
-              <h1>The Walking Dead</h1>
-            </div>
-          </div>
-          <div className='titles'>
-            <img src={ironManCover} alt='Iron Man 2' />
-            <div className='overlayTitle'>
-              <h1>Iron Man 2</h1>
-            </div>
-          </div>
+          <Movie name='Game Of Thrones' cover={gameOfThronesCover}/>
+          <Movie name='The Walking Dead' cover={theWalkingDeadCover}/>
+          <Movie name='Iron Man 2' cover={ironMan2Cover}/>
         </div>
-      </div>
+      </div>      
     </div>
   );
 }
+// function Movie(props) {
+//   return (
+//       <div className='titles'>
+//           <img src={props.cover} alt={`${props.name} cover`} />
+//           <div className='overlayTitle'>
+//               <h1>{props.name}</h1>
+//           </div>
+//       </div>
+//   );
+// }
 
 export default App;

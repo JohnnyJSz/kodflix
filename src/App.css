@@ -1,23 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-block: 0;
+}
+img {
+  display: block;
+}
 .App {
   text-align: center;
 }
-
 .container {
   text-align: center;
+  width: auto;
 }
-
 .row1 {
   display: flex;
 }
 .row2 {
   display: flex;
 }
-
 .titles {
   flex: 1;
-  border: 1px solid greenyellow;
   position: relative;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 .overlayTitle {
   color: whitesmoke;
@@ -25,13 +31,16 @@
   width: 100%;
   opacity: .4;
   position: absolute;
-  bottom: 10%;
+  bottom: -10%;
   transition: bottom ease 1s;
 }
 .titles:hover .overlayTitle{
   opacity: .8;
   bottom: 40%;
 }
+
+
+
 
 @media only screen and (max-width: 600px) {
   .row1 {
