@@ -13,12 +13,12 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-        <div className='row1'>
+        <div className='row'>
           <Movie name='Black Mirror' cover={blackMirrorCover}/>
           <Movie name='Breaking Bad' cover={breakingBadCover}/>
           <Movie name='Death Note' cover={deathNoteCover}/>
         </div>
-        <div className='row2'>
+        <div className='row'>
           <Movie name='Game Of Thrones' cover={gameOfThronesCover}/>
           <Movie name='The Walking Dead' cover={theWalkingDeadCover}/>
           <Movie name='Iron Man 2' cover={ironMan2Cover}/>
@@ -27,15 +27,5 @@ function App() {
     </div>
   );
 }
-// function Movie(props) {
-//   return (
-//       <div className='titles'>
-//           <img src={props.cover} alt={`${props.name} cover`} />
-//           <div className='overlayTitle'>
-//               <h1>{props.name}</h1>
-//           </div>
-//       </div>
-//   );
-// }
 
 export default App;

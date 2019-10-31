@@ -7,17 +7,16 @@
 img {
   display: block;
 }
+
+
+
 .App {
   text-align: center;
 }
 .container {
-  text-align: center;
   width: auto;
 }
-.row1 {
-  display: flex;
-}
-.row2 {
+.row {
   display: flex;
 }
 .titles {
@@ -43,10 +42,7 @@ img {
 
 
 @media only screen and (max-width: 600px) {
-  .row1 {
-    flex-direction: column;
-  }
-  .row2 {
+  .row {
     flex-direction: column;
   }
 }
