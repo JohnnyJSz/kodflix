@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function Movie(props) {
+export default function Movie({ name , cover }) {
     return (
         <div className='titles'>
-            <img src={props.cover} alt={`${props.name} cover`} />
+            <img src={cover} alt={`${name} cover`} />
             <div className='overlayTitle'>
-                <h1>{props.name}</h1>
+                <h1>{name}</h1>
             </div>
         </div>
     );
