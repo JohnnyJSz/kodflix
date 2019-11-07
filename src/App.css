@@ -13,17 +13,15 @@ img {
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: auto;
 }
-/* .row {
-  display: flex;
-} */
+
 .titles {
-  /* flex: 1; */
   position: relative;
   overflow: hidden;
 }
+
 .overlayTitle {
   color: whitesmoke;
   background-color: black;
@@ -39,10 +37,3 @@ img {
 }
 
 
-
-
-/* @media only screen and (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
-} */
