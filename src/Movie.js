@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-//import MovieData from '.MovieData';
-
 export default function Movie({ id, title , cover }) {
     return (
         <Link to={`/${id}`} className='titles'>
