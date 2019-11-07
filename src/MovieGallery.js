@@ -11,16 +11,12 @@ import ironMan2Cover from './images/ironMan2Cover.jpg';
 export default function MoviesGallery() {
     return (
       <div className='container'>
-          <div className='row'>
-            <Movie name='Black Mirror' cover={blackMirrorCover}/>
-            <Movie name='Breaking Bad' cover={breakingBadCover}/>
-            <Movie name='Death Note' cover={deathNoteCover}/>
-          </div>
-          <div className='row'>
-            <Movie name='Game Of Thrones' cover={gameOfThronesCover}/>
-            <Movie name='The Walking Dead' cover={theWalkingDeadCover}/>
-            <Movie name='Iron Man 2' cover={ironMan2Cover}/>
-          </div>
+            <Movie id='blackMirror' name='Black Mirror' cover={blackMirrorCover}/>
+            <Movie id='breakingBad' name='Breaking Bad' cover={breakingBadCover}/>
+            <Movie id='deathNote' name='Death Note' cover={deathNoteCover}/>
+            <Movie id='gameOfThrones' name='Game Of Thrones' cover={gameOfThronesCover}/>
+            <Movie id='theWalkingDead' name='The Walking Dead' cover={theWalkingDeadCover}/>
+            <Movie id='ironMan2' name='Iron Man 2' cover={ironMan2Cover}/>
         </div> 
     );
 }
