@@ -1,12 +1,15 @@
 import React from 'react';
-
-import MovieData from './MovieData';
-import MovieDataFn from './MovieData';
+import getMoviesData from './GetMoviesData';
+import Movie from './Movie';
 
 export default function MoviesGallery() {
     return (
       <div className='container'>
-        <MovieDataFn id={MovieData.id} name={MovieData.title} cover={MovieData.cover}/>
+      {
+        getMoviesData().map( movie => (
+          <Movie key={movie.id} id={movie.id} title={movie.title} cover={movie.cover} />
+        ))
+      }   
       </div> 
     );
 }
