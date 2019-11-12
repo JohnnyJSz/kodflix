@@ -1,8 +1,6 @@
 import React from 'react';
-
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
-
 import MovieGallery from './MovieGallery'
 import Details from './Details'
 
@@ -16,7 +14,4 @@ function App() {
     </Router>
   );
 }
-
-
-
 export default App;

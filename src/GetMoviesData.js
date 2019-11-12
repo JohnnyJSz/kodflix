@@ -1,4 +1,3 @@
-
 import blackMirrorCover from './images/blackMirrorCover.jpg';
 import breakingBadCover from './images/breakingBadCover.jpg';
 import deathNoteCover from './images/deathNoteCover.jpg';
