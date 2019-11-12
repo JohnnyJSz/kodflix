@@ -9,9 +9,10 @@ function App() {
     <Router>
       <div className='App'>
         <Route exact path='/' component={MovieGallery} />
-        <Route exact path='/:details' component={Details} />
+        <Route exact path='/:movieUrlId' component={Details} />
       </div>
     </Router>
   );
 }
 export default App;
+
