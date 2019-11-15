@@ -1,15 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import MovieGallery from './MovieGallery'
-import Details from './Details'
+import MovieGallery from './MovieGallery';
+import Details from './Details';
+import NotFound from './NotFound';
 
 function App() {
   return (
     <Router>
       <div className='App'>
-        <Route exact path='/' component={MovieGallery} />
-        <Route exact path='/:movieUrlId' component={Details} />
+      <Switch>
+          <Route exact path='/' component={MovieGallery} />
+          <Route path='/not-found' component={NotFound} />
+          <Route exact path='/:movieUrlId' component={Details} />
+        </Switch>
       </div>
     </Router>
   );
