@@ -7,10 +7,15 @@
 img {
   display: block;
 }
+body {
+  background-color: rgb(25, 32, 46);
+  color: #ebebeb;
+}
 
 .App {
   text-align: center;
 }
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -21,6 +26,53 @@ img {
   position: relative;
   overflow: hidden;
 }
+
+.containerDetails {
+  margin: 2%;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    'title    title'
+    'synopsis img'
+    'link     link'
+}
+.titleDetails {
+  padding: 1%;
+  grid-area: title;
+}
+.paragraphDetails {
+  font-size: 150%;
+  grid-area: synopsis;
+  text-align: center;
+  align-self: flex-start;
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-rows: 20px auto 20px;
+}
+#synopsisDetails {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.coverDetails {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-rows: 20px auto 20px;
+  grid-area: img;
+}
+#imgDetails {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: 75%;
+  padding-left: 12%;
+}
+.linkBackHomeDetails{
+  color: aliceblue;
+  grid-area: link;
+  padding: 2%;
+}
+
 
 .overlayTitle {
   color: whitesmoke;
@@ -37,4 +89,13 @@ img {
   bottom: 50%;
 }
 
-
+@media only screen and (max-width: 750px) {
+  .containerDetails {
+    display: grid;
+    grid-template-areas:
+      'title    title'
+      'synopsis synopsis'
+      'img      img'
+      'link     link'
+  }
+}
