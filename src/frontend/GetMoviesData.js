@@ -1,11 +1,11 @@
-import blackMirrorCover from './images/blackMirrorCover.jpg';
-import breakingBadCover from './images/breakingBadCover.jpg';
-import deathNoteCover from './images/deathNoteCover.jpg';
-import gameOfThronesCover from './images/gameOfThronesCover.jpg';
-import theWalkingDeadCover from './images/theWalkingDeadCover.jpg';
-import ironMan2Cover from './images/ironMan2Cover.jpg';
-import spiderManHomecomingCover from './images/spiderManCover.jpg';
-import blackPantherCover from './images/blackPantherCover.jpg';
+import blackMirrorCover from '../images/blackMirrorCover.jpg';
+import breakingBadCover from '../images/breakingBadCover.jpg';
+import deathNoteCover from '../images/deathNoteCover.jpg';
+import gameOfThronesCover from '../images/gameOfThronesCover.jpg';
+import theWalkingDeadCover from '../images/theWalkingDeadCover.jpg';
+import ironMan2Cover from '../images/ironMan2Cover.jpg';
+import spiderManHomecomingCover from '../images/spiderManCover.jpg';
+import blackPantherCover from '../images/blackPantherCover.jpg';
 
 export default function getMoviesData(){
     return [
