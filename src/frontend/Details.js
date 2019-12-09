@@ -11,7 +11,7 @@ export default class Details extends React.Component {
   }
 
   componentDidMount() {
-    let movieId = this.props.match.params.movieUrlId;
+    let movieId = this.props.match.params.movieURL;
     let getMovieInfo = getMoviesData().find(movie => movie.id === movieId);
     this.setState({
       movie: getMovieInfo

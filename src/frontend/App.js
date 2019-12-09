@@ -12,7 +12,7 @@ function App() {
       <Switch>
           <Route exact path='/' component={MovieGallery} />
           <Route path='/not-found' component={NotFound} />
-          <Route exact path='/:movieUrlId' component={Details} />
+          <Route exact path='/:movieURL' component={Details} />
         </Switch>
       </div>
     </Router>
