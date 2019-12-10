@@ -11,6 +11,10 @@ export default class Details extends React.Component {
   }
 
   componentDidMount() {
+    fetch('/rest/moviesData')
+      .then(res => res.json())
+      .then(movie => this.setState({ movie: movie }, console.log('Movies fetched..', movie)));
+
     let movieId = this.props.match.params.movieURL;
     let getMovieInfo = getMoviesData().find(movie => movie.id === movieId);
     this.setState({
