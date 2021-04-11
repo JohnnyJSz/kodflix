@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  box-sizing: border-box;
 }
+
 img {
   display: block;
 }
+
 body {
   background-color: rgb(25, 32, 46);
   color: #ebebeb;
@@ -21,11 +24,24 @@ body {
   width: auto;
 }
 
+.kodflix-title {
+  font-size: 350%;
+  color: #CA0B15;
+  text-shadow: #5C1216;
+}
+.kodflix-title-link{
+  text-decoration: none;
+}
+
 .titles {
   position: relative;
   overflow: hidden;
 }
 
+.mainDetails {
+  padding: 1rem;
+  margin-bottom: .5rem;
+}
 .containerDetails {
   width: auto;
   display: grid;
@@ -44,8 +60,9 @@ body {
   font-size: 150%;
   grid-area: synopsis;
   text-align: center;
-  align-self: flex-start;
+  align-self: center;
   display: grid;
+  margin: 0 2rem;
 }
 #synopsisDetails {
   margin: 20px auto;
@@ -58,11 +75,21 @@ body {
   height: auto;
   margin: 0 auto;
 }
+
+
 .linkBackHomeDetails{
   color: aliceblue;
+  background-color: #DC0C16;
   grid-area: link;
-  padding: 2%;
+  padding: 1rem;
+  width: 20rem;
+  height: auto;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 300;
+  box-shadow: 0px 1px 3px 2px #5C1216;
 }
+
 
 
 .overlayTitle {
@@ -72,7 +99,6 @@ body {
   opacity: .4;
   position: absolute;
   bottom: -30%;
-  /*cubic-bezier is the animation for the titles when hover*/
   transition: bottom cubic-bezier(0.54, 0.07, 0.49, 0.98) .8s;
 }
 .titles:hover .overlayTitle{
@@ -80,7 +106,34 @@ body {
   bottom: 50%;
 }
 
+.not-found {
+  padding: 2rem;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
 @media only screen and (max-width: 750px) {
+  .mainDetails {
+    padding-bottom: 4rem;
+  }
+  .paragraphDetails {
+    margin: 0;
+  }
+  .coverDetails {
+    grid-area: img;
+    padding: 1rem;
+    margin: 1rem 0rem 2rem 0rem;
+  }
   .containerDetails {
     display: grid;
     grid-template-areas:

@@ -22,18 +22,18 @@ export default class Details extends React.Component {
       return <div>loading...</div>;
     } else {
       return (
-        <>
+        <div className='mainDetails'>
           <div className='containerDetails'>
             <h1 className='titleDetails'>{this.state.movie.title}</h1>
-            <div className='coverDetails'>
-              <img id='imgDetails' src={require(`../images/${this.state.movie.id}Cover.jpg`)} alt='cover movie' />
-            </div>
             <div className='paragraphDetails'>
               <p id='synopsisDetails'>{this.state.movie.synopsis}</p>
             </div>
+            <div className='coverDetails'>
+              <img id='imgDetails' src={require(`../images/${this.state.movie.id}Cover.jpg`)} alt='cover movie' />
+            </div>
           </div>
           <Link className='linkBackHomeDetails' to='/'>Back to home page</Link>
-        </>
+        </div>
       );
     } 
   }
