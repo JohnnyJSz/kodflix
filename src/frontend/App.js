@@ -6,6 +6,7 @@ import Details from "./Details";
 import NotFound from "./NotFound";
 
 function App() {
+  let date = new Date();
   return (
     <Router>
       <div className='App'>
@@ -18,7 +19,7 @@ function App() {
           <Route exact path='/:movieURL' component={Details} />
         </Switch>
         <div className='footer'>
-          <p>2019 Kodiri &copy; - Kodflix | Jonathan J S.</p>
+          <p>{date.getFullYear()} Kodiri &copy; - Kodflix | Jonathan J S.</p>
         </div>
       </div>
     </Router>
